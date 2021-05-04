@@ -20,6 +20,11 @@ void setup()
 }
 void loop() 
 {
+  letraF();
+}
+
+void letraF()
+{
   limpieza();
   digitalWrite(columna[2], LOW);
   digitalWrite(fila[0], HIGH);
@@ -45,7 +50,7 @@ void loop()
   digitalWrite(fila[4], HIGH);
   delay(5);
 
-limpieza();
+  limpieza();
   digitalWrite(columna[3], LOW);
   digitalWrite(fila[0], HIGH);
   delay(5);
@@ -78,3 +83,4 @@ void limpieza()
     digitalWrite(fila[i], LOW);
   }
 }
+
